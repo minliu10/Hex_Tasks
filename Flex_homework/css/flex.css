@@ -331,7 +331,12 @@ h2 {
   color: #ffffff;
   font-size: 16px;
   background: #00cc99;
-  border: none;
+  /* border: none; */
+}
+
+.custInput input.btnSend:hover {
+  color: #00cc99;
+  background: #ffffff;
 }
 
 .footer {
