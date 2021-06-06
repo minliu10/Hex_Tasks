@@ -1,0 +1,313 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h2 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 32px;
+  padding-bottom: 8px;
+  font-weight: bold;
+}
+
+h2 span {
+  font-family: "Roboto", sans-serif;
+  color: #a00404;
+  margin-left: 16px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.peWrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.profile {
+  margin-top: 48px;
+  margin-left: 72px;
+}
+.profile h1 {
+  font-size: 80px;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 2px solid black;
+  width: 1200px;
+}
+
+.profile img {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.profile h2 {
+  border-bottom: 2px solid black;
+  padding-bottom: 8px;
+  width: 1200px;
+}
+
+.profile .pdiv1 {
+  margin-bottom: 24px;
+}
+
+.profile .pdiv2 {
+  margin-bottom: 72px;
+}
+
+.education {
+  margin-bottom: 72px;
+  margin-left: 72px;
+}
+
+.education h2 {
+  border-bottom: 2px solid black;
+  margin-bottom: 16px;
+  width: 1200px;
+}
+.education ul li.line1 {
+  margin-bottom: 24px;
+}
+
+ul {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.skill {
+  background: #415165;
+  color: white;
+  padding-top: 24px;
+  margin: 0 auto;
+}
+.skill span {
+  font-size: 24px;
+  line-height: 32px;
+  color: white;
+}
+
+.skill h2 {
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 996px;
+}
+
+.skill .sdiv1 {
+  display: inline-block;
+  width: 42%;
+  /* height: 100%; */
+}
+
+.skill .sdiv2 {
+  display: inline-block;
+  border-left: 1px solid #96a9c4;
+  padding-left: 24px;
+  font-size: 100px;
+  margin-bottom: 36px;
+  font-family: "Roboto", sans-serif;
+}
+
+.skill ul li {
+  margin-bottom: 20px;
+}
+.skill ul li.last {
+  margin-bottom: 0px;
+}
+
+.work {
+  width: 1200px;
+  padding-top: 72px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.work h2 {
+  border-bottom: 1px solid black;
+}
+
+.work .content {
+  padding-left: 24px;
+  margin-top: 16px;
+  margin-left: 24px;
+  border-left: 1px solid #96a9c4;
+}
+
+.work .content ul li {
+  margin-bottom: 24px;
+}
+.work p {
+  width: 642px;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+
+.work .content ul li.last {
+  margin-bottom: 0px;
+}
+.contact {
+  margin-top: 72px;
+  padding-bottom: 36px;
+  background: #415165;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  border-bottom: 1px solid white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 24px;
+  color: white;
+  width: 1200px;
+}
+
+.contact ul {
+  margin-top: 32px;
+}
+
+.contact ul li {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.contact span {
+  font-size: 24px;
+  line-height: 32px;
+  color: white;
+}
+
+.contact .pic img {
+  margin-right: 24px;
+}
+
+.ff-Noto {
+}
