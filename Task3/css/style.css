@@ -180,6 +180,10 @@ h2 {
   text-decoration: none;
 }
 
+.header .menu li a:hover {
+  background: #ffa500;
+}
+
 .middle-containor {
   display: flex;
   justify-content: space-between;
