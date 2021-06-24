@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO List</title>
+    <link rel="stylesheet" href="scss/all.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@700&family=Noto+Sans+TC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5448f93d10.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="containor">
+      <header><h1>TODO LIST</h1></header>
+
+      <div class="input-add">
+        <input
+          type="text"
+          class="txt-input br-10 pl-3"
+          placeholder="新增待辦事項"
+        />
+        <input type="button" class="btn-add btn" value="" />
+        <span>+</span>
+      </div>
+
+      <div class="listbox hide">
+        <div class="list-plus brt-lr-10">
+          <ul class="list-btn">
+            <li><a href="#" class="abtn-all"> 全部</a></li>
+            <li><a href="#" class="abtn-undone"> 待完成</a></li>
+            <li><a href="#" class="abtn-done"> 已完成</a></li>
+          </ul>
+          <ul class="list-all"></ul>
+        </div>
+        <div class="list-footer brb-lr-10">
+          <p><span class="undone-num">0</span>個待完成項目</p>
+          <p>
+            <a class="clear-undones" href="#">清除已完成項目</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="all.js"></script>
+  </body>
+</html>
