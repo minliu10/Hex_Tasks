@@ -1,0 +1,60 @@
+// 手機版是 375px, 但平板沒做RWD有點醜
+// 所以直接設成平板的大小了
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin a-setting {
+  height: 40px;
+  text-decoration: none;
+  display: block;
+  color: #333333;
+  border-bottom: 1px solid #efefef;
+
+  &hover {
+    background: #ffd370;
+  }
+}
+@mixin btn-clear {
+  border: none;
+  background: #ffffff;
+}
+
+@mixin list-set {
+  min-height: 177px;
+  max-height: 392px;
+  overflow-y: auto;
+  padding-left: 24px;
+  padding-right: 16px;
+  // cursor: pointer;
+  li {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    line-height: 55px;
+    text-align: left;
+
+    .btn-delete {
+      position: absolute;
+      right: 0;
+      display: none;
+    }
+    &:hover {
+      .btn-delete {
+        display: block;
+      }
+    }
+  }
+  span {
+    width: 20px;
+    height: 20px;
+  }
+  p {
+    display: inline-block;
+    width: 81.6%;
+    border-bottom: 1px solid #efefef;
+  }
+}

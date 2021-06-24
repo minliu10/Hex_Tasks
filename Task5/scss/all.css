@@ -1,0 +1,562 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.mt-8 {
+  margin-top: 48px;
+}
+
+.mb21 {
+  margin-bottom: 21px;
+}
+
+i,
+span {
+  pointer-events: none;
+}
+
+body {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  top: -50px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 345px;
+  background: #ffd370;
+  z-index: -99;
+}
+
+@media (max-width: 768px) {
+  body::before {
+    height: 300px;
+  }
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 294px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 220px 100vw 0 0;
+  border-color: #ffd370 transparent transparent transparent;
+  z-index: -98;
+}
+
+@media (max-width: 768px) {
+  body::after {
+    top: 249px;
+    border-width: 95px 100vw 0 0;
+  }
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 82px;
+  margin-top: 16px;
+  margin-bottom: 21px;
+  font-family: "Baloo Tamma 2", cursive;
+  font-weight: 500;
+  letter-spacing: 8px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    margin-top: 16px;
+    margin-bottom: 2px;
+    font-size: 32px;
+    line-height: 56px;
+  }
+}
+
+.containor {
+  width: 34.72222%;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .containor {
+    width: 93.6%;
+  }
+}
+
+::-webkit-input-placeholder {
+  color: #9f9a91;
+}
+
+:-ms-input-placeholder {
+  color: #9f9a91;
+}
+
+::-ms-input-placeholder {
+  color: #9f9a91;
+}
+
+::placeholder {
+  color: #9f9a91;
+}
+
+.input-add {
+  position: relative;
+  margin-bottom: 8px;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.input-add .txt-input {
+  width: 100%;
+  height: 48px;
+  border: none;
+  font-size: 16px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  padding-left: 16px;
+}
+
+@media (max-width: 768px) {
+  .input-add .txt-input {
+    padding: 12px;
+    font-size: 14px;
+    border: 0;
+  }
+}
+
+.input-add .btn-add {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+
+.input-add span {
+  position: absolute;
+  right: 15px;
+  top: -1px;
+  color: #ffffff;
+  font-size: 32px;
+  line-height: 47px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 500;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  font-size: 32px;
+  background: #000000;
+  color: #efefef;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.listbox {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.listbox .list-plus {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #ffffff;
+}
+
+.listbox .list-plus .list-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.listbox .list-plus .list-btn li {
+  width: 33.333%;
+}
+
+.listbox .list-plus .list-btn li:hover {
+  border-bottom: 2px solid #333333;
+}
+
+.listbox .list-plus .list-btn li a {
+  height: 40px;
+  text-decoration: none;
+  display: block;
+  color: #333333;
+  border-bottom: 1px solid #efefef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.listbox .list-plus .list-btn li ahover {
+  background: #ffd370;
+}
+
+.listbox .list-plus .list-all {
+  min-height: 177px;
+  max-height: 392px;
+  overflow-y: auto;
+  padding-left: 24px;
+  padding-right: 16px;
+}
+
+.listbox .list-plus .list-all li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 55px;
+  text-align: left;
+}
+
+.listbox .list-plus .list-all li .btn-delete {
+  position: absolute;
+  right: 0;
+  display: none;
+}
+
+.listbox .list-plus .list-all li:hover .btn-delete {
+  display: block;
+}
+
+.listbox .list-plus .list-all span {
+  width: 20px;
+  height: 20px;
+}
+
+.listbox .list-plus .list-all p {
+  display: inline-block;
+  width: 81.6%;
+  border-bottom: 1px solid #efefef;
+}
+
+.todo .btn-check {
+  display: inline-block;
+  vertical-align: text-bottom;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: #ffffff;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.todo .btn-delete {
+  border: none;
+  background: #ffffff;
+  display: block;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background-image: url("../image/cancel.jpg");
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .todo .btn-delete {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.checked {
+  text-decoration: line-through;
+  color: rgba(51, 51, 51, 0.3);
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.checked .btn-check {
+  border: none;
+  background: #ffffff;
+}
+
+.hide {
+  display: none !important;
+}
+
+.list-footer {
+  padding: 24px 40px 32px 24px;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .list-footer {
+    padding: 24px 16px 24px 16px;
+    font-size: 14px;
+  }
+}
+
+.list-footer p {
+  display: block;
+}
+
+.list-footer p span {
+  padding-right: 4px;
+}
+
+.list-footer p a {
+  padding: 8px;
+  color: #9f9a91;
+  text-decoration: none;
+}
+
+.list-footer p a:hover {
+  background: lightyellow;
+}
+
+@media (max-width: 768px) {
+  .list-footer p a {
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .list-footer p {
+    line-height: 20px;
+  }
+}
+
+.selected {
+  border-bottom: 2px solid #333333;
+}
+
+.br-10 {
+  border-radius: 10px;
+}
+
+.brt-lr-10 {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.brb-lr-10 {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@-webkit-keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scaleDown {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes scaleDown {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+/*# sourceMappingURL=all.css.map */
