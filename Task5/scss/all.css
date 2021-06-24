@@ -153,6 +153,27 @@ img {
   margin-bottom: 21px;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+@media (max-width: 866px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: inherit;
+  background-color: rgba(144, 147, 153, 0.3);
+  -webkit-transition: 0.3s background-color;
+  transition: 0.3s background-color;
+}
+
 i,
 span {
   pointer-events: none;
@@ -173,7 +194,7 @@ body::before {
   z-index: -99;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 866px) {
   body::before {
     height: 300px;
   }
@@ -192,7 +213,7 @@ body::after {
   z-index: -98;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 866px) {
   body::after {
     top: 249px;
     border-width: 95px 100vw 0 0;
@@ -209,7 +230,7 @@ h1 {
   letter-spacing: 8px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 866px) {
   h1 {
     margin-top: 16px;
     margin-bottom: 2px;
@@ -227,7 +248,7 @@ h1 {
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 866px) {
   .containor {
     width: 93.6%;
   }
@@ -266,7 +287,7 @@ h1 {
   padding-left: 16px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 866px) {
   .input-add .txt-input {
     padding: 12px;
     font-size: 14px;
@@ -423,7 +444,7 @@ h1 {
   background-size: cover;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 866px) {
   .todo .btn-delete {
     width: 12px;
     height: 12px;
@@ -457,7 +478,7 @@ h1 {
           justify-content: space-between;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 866px) {
   .list-footer {
     padding: 24px 16px 24px 16px;
     font-size: 14px;
@@ -482,13 +503,13 @@ h1 {
   background: lightyellow;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 866px) {
   .list-footer p a {
     line-height: 20px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 866px) {
   .list-footer p {
     line-height: 20px;
   }

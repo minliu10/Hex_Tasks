@@ -1,3 +1,23 @@
+::-webkit-scrollbar {
+  width: 15px;
+  @include mobile() {
+    width: 10px;
+  }
+}
+
+// 滾動槽
+::-webkit-scrollbar-track {
+  border-radius: 15px;
+}
+
+// 滾動條滑塊
+::-webkit-scrollbar-thumb {
+  border-radius: inherit;
+  background-color: rgba(144, 147, 153, 0.3);
+  -webkit-transition: 0.3s background-color;
+  transition: 0.3s background-color;
+}
+
 i,
 span {
   pointer-events: none;

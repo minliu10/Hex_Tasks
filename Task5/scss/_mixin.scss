@@ -1,7 +1,8 @@
 // 手機版是 375px, 但平板沒做RWD有點醜
-// 所以直接設成平板的大小了
+// 所以直接設成平板的大小
+// 設866px是因為...這個數字H1才不會掉到第二行
 @mixin mobile {
-  @media (max-width: 768px) {
+  @media (max-width: 866px) {
     @content;
   }
 }
