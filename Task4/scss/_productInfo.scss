@@ -1,0 +1,77 @@
+.p-containor {
+  @include containor;
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
+
+  .p-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 65.76%;
+    .normal {
+      width: 100%;
+      max-height: 460px;
+    }
+    .long {
+      width: 48%;
+      max-height: 640px;
+    }
+    img {
+      margin-bottom: 30px;
+    }
+  }
+
+  .p-info {
+    width: 31.53%;
+    div:first-child {
+      p {
+        font-size: 20px;
+        line-height: 30px;
+        i {
+          color: #916019;
+          margin-right: 2px;
+        }
+      }
+
+      .price {
+        margin: 32px 0 12px 0;
+      }
+      div {
+        display: flex;
+        height: 50px;
+        font-size: 16px;
+        margin-bottom: 8px;
+
+        input:first-child {
+          width: 45.72%;
+          color: #495057;
+          padding: 0;
+          border: 1px solid #916000;
+          border-radius: 4px 0px 0px 4px;
+          padding: 0 11px 0 16px;
+        }
+        input:last-child {
+          width: 54.28%;
+          background: #916000;
+          color: #ffffff;
+          font-size: 16px;
+          border: 2px solid #916000;
+          border-radius: 0px 4px 4px 0px;
+        }
+      }
+    }
+    div:last-child {
+      margin-top: 80px;
+      font-size: 16px;
+      line-height: 24px;
+      .subtitle {
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+      .sec {
+        margin-top: 20px;
+      }
+    }
+  }
+}

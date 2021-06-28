@@ -1,0 +1,319 @@
+.containor {
+  @include containor;
+  padding: 60px 0;
+}
+.row {
+  display: flex !important;
+}
+
+.row-reverse {
+  display: flex !important;
+  flex-direction: row-reverse !important;
+}
+
+.column {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.header {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    text-align: center;
+    align-items: center;
+    background: #ffffff;
+
+    padding: 0; // 為了消除contionor 60px
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        a {
+          padding: 8px 16px;
+          @include default-a-setting;
+          color: #8d8d8d;
+          &:hover {
+            background-color: #916019;
+            color: #ffffff;
+          }
+          i {
+            padding-right: 3px;
+          }
+        }
+      }
+    }
+  }
+
+  .banner {
+    position: relative;
+    img {
+      width: 100%;
+      max-height: 870px;
+    }
+
+    div {
+      position: absolute;
+      top: 33.908%; // 335px
+      right: 22%; //1070px
+      width: 23.17%;
+      color: #ffffff;
+
+      p {
+        font-size: 24px;
+        line-height: 36px;
+      }
+      a {
+        margin-top: 16px;
+        @include default-a-setting;
+        width: 350px;
+        height: 60px;
+        font-size: 24px;
+        color: #ffffff;
+        line-height: 60px;
+        border: 2px solid #ffffff;
+        border-radius: 30px;
+        &:hover {
+          background: #ffffff4d 0% 0% no-repeat padding-box;
+        }
+      }
+    }
+  }
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  .product-normal {
+    display: block;
+    height: 555px;
+    .product-desc {
+      display: flex;
+      width: 50%;
+      justify-content: center;
+      align-items: center;
+      div {
+        width: 63.06%;
+        p {
+          font-size: 20px;
+          line-height: 30px;
+          margin-bottom: 16px;
+        }
+        a {
+          @include btn-chckMore;
+        }
+      }
+    }
+
+    .product-img1 {
+      @include product-img(50%);
+      background-image: url(../image/index2.jpg);
+    }
+    .product-img2 {
+      @include product-img(50%);
+      background-image: url(../image/index3.png);
+    }
+    .product-img3 {
+      @include product-img(50%);
+      background-image: url(../image/index4.jpg);
+    }
+  }
+}
+.product-long {
+  height: 1080px;
+  display: flex;
+  .product-desc {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul {
+      margin-top: 92px;
+      width: 63.06%;
+      li {
+        margin-bottom: 52px;
+        p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      a {
+        @include default-a-setting;
+        margin-top: 8px;
+        width: 350px;
+        height: 60px;
+        font-size: 20px;
+        color: #000000;
+        font-weight: bold;
+        line-height: 60px;
+        border: 2px solid #000000;
+        border-radius: 30px;
+        &:hover {
+          background: #0000000d 0% 0% no-repeat padding-box;
+        }
+      }
+    }
+  }
+  .product-img4 {
+    @include product-img(50%);
+    height: 100%;
+    background-image: url(../image/index5.jpg);
+  }
+}
+
+.full-box-grey {
+  background: #e0e0e0;
+  height: 728px;
+  ul {
+    @include containor;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    li {
+      // width: 33.33%;
+      padding-right: 30px;
+      font-size: 16px;
+      line-height: 24px;
+      img {
+        background-size: cover;
+        width: 350px;
+        height: 540px;
+        margin-bottom: 8px;
+      }
+      p {
+        margin-top: 16px;
+        span {
+          margin-left: 8px;
+          text-decoration: line-through;
+          color: #8d8d8d;
+        }
+      }
+    }
+    li:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.full-box-white {
+  @include containor;
+  padding: 60px 0;
+  display: flex;
+
+  img {
+    width: 730px;
+    height: 520px;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    justify-content: center;
+    span {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    p {
+      margin-top: 16px;
+      line-height: 24px;
+    }
+    a {
+      margin-top: 16px;
+      @include btn-chckMore;
+      text-align: left;
+    }
+  }
+}
+
+.footer {
+  background: #916000;
+  color: #ffffff;
+  .bg-img {
+    @include product-img(100%);
+    height: 600px;
+
+    background-image: url(../image/index10.jpg);
+    background-position: right 0% top 50%;
+    position: relative;
+
+    .subscribe {
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      h3 {
+        color: #8d8d8d;
+        margin-bottom: 20px;
+      }
+      div {
+        display: flex;
+        width: 350px;
+        flex-wrap: wrap;
+        height: 60px;
+        border: 2px solid #916000;
+        border-radius: 0px 4px 4px 0px;
+
+        .txt {
+          width: 62.58%;
+          font-size: 16px;
+          line-height: 24px;
+          padding-left: 16px;
+          border: none;
+        }
+        ::placeholder {
+          color: #8d8d8d;
+        }
+        .f-btn {
+          width: 37.42%;
+          background: #916000;
+          border: none;
+          color: #ffffff;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  .footer-menu {
+    @include containor;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer-copyright {
+      height: 38px;
+      display: flex;
+      align-items: center;
+      img {
+        width: 128px;
+      }
+      p {
+        margin-left: 20px;
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+    .footer-info {
+      display: flex;
+      li {
+        a {
+          @include default-a-setting;
+          font-size: 20px;
+          line-height: 30px;
+          padding: 8px;
+          margin-right: 20px;
+          color: #ffffff;
+          &:hover {
+            background: #ffffff;
+            color: #916000;
+          }
+        }
+      }
+    }
+  }
+}
