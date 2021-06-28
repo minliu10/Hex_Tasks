@@ -1,0 +1,104 @@
+.p-containor {
+  @include containor;
+  padding: 80px 0 60px 0;
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    // 清除每列最後一個的margin
+    .p-item:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    .p-item {
+      width: 255px;
+      height: 360px;
+      margin-right: 30px;
+      margin-bottom: 58px;
+
+      .product-desc {
+        font-size: 16px;
+        line-height: 24px;
+        p {
+          span {
+            color: #8d8d8d;
+            margin-left: 8px;
+            text-decoration: line-through;
+          }
+        }
+        div {
+          i {
+            color: #916019;
+            margin-right: 8px;
+          }
+        }
+      }
+      .product-img1 {
+        @include productsPage-img(center, cover);
+        background-image: url(../image/products1.jpg);
+      }
+      .product-img2 {
+        @include productsPage-img(bottom, cover);
+        background-image: url(../image/index6.jpg);
+      }
+      .product-img3 {
+        @include productsPage-img(0 25%, cover);
+        background-image: url(../image/products3.jpg);
+      }
+      .product-img4 {
+        @include productsPage-img(0 27%, cover);
+        background-image: url(../image/products4.jpg);
+      }
+      .product-img5 {
+        @include productsPage-img(0 35%, cover);
+        background-image: url(../image/products5.jpg);
+      }
+      .product-img6 {
+        @include productsPage-img(left, cover);
+        background-image: url(../image/index4.jpg);
+      }
+      .product-img7 {
+        @include productsPage-img(center, cover);
+        background-image: url(../image/products7.jpg);
+      }
+      .product-img8 {
+        @include productsPage-img(center, cover);
+        background-image: url(../image/products8.jpg);
+      }
+      .product-img9 {
+        @include productsPage-img(center, cover);
+        background-image: url(../image/index3.png);
+      }
+      .product-img10 {
+        @include productsPage-img(0 32%, cover);
+        background-image: url(../image/products10.jpg);
+      }
+      .product-img11 {
+        @include productsPage-img(center, cover);
+        background-image: url(../image/products11.jpg);
+      }
+      .product-img12 {
+        @include productsPage-img(42% 0, cover);
+        background-image: url(../image/products12.jpg);
+      }
+    }
+  }
+
+  .page-btns {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    line-height: 30px;
+
+    li {
+      margin: 0 15px;
+      a {
+        @include default-a-setting;
+        color: #000000;
+        &:hover {
+          color: #ac8a46;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

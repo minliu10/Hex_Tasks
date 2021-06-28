@@ -1,0 +1,63 @@
+@mixin mobile {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin default-a-setting {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+@mixin product-img($width) {
+  width: $width;
+  background-size: cover;
+}
+
+@mixin product-desc {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  div {
+    width: 31.53%;
+  }
+}
+
+@mixin btn-chckMore {
+  @include default-a-setting;
+  margin-top: 8px;
+  padding: 8px 0;
+  color: #ac8a46;
+  font-size: 16px;
+  line-height: 24px;
+  &:hover {
+    background-color: #ac8a46;
+    color: #ffffff;
+  }
+}
+@mixin containor {
+  max-width: $desktop-containor-width;
+  margin: 0 auto;
+}
+
+@mixin productsPage-img($position, $size) {
+  width: 100%;
+  height: 255px;
+  background-position: $position;
+  background-size: $size;
+}
+
+@mixin productsPage-pdesc {
+}
+
+@mixin btn-fat($bgclor, $color) {
+  width: 65px;
+  height: 35px;
+  border: 1px solid #916000;
+  border-radius: 4px;
+  background: $bgclor;
+  color: $color;
+  line-height: 22px;
+}
